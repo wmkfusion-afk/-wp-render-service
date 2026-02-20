@@ -26,6 +26,7 @@ page.wait_for_timeout(max(0, min(payload.wait_ms, 15000)))
 html = page.content()
 final_url = page.url
 browser.close()
+
 return {
 "ok": True,
 "url": str(payload.url),
